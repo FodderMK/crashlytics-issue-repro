@@ -20,7 +20,7 @@ namespace CrashlyticsIssueRepro
         /// </summary>
         public async Task ThrowAsync()
         {
-            await EnlargeAsyncStacktraceAndFinallyThrow(15);
+            await EnlargeAsyncStacktraceAndFinallyThrow(50);
         }
 
         /// <summary>
