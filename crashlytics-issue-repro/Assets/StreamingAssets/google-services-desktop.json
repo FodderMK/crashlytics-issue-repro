@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "39763357993",
+    "project_id": "crashlytics-issue-repro",
+    "storage_bucket": "crashlytics-issue-repro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:39763357993:android:b85ee91948e9909a1fc738",
+        "android_client_info": {
+          "package_name": "com.gbanga.crashlyticsissuerepro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "39763357993-pc344fsrdulamp6ue1bpn5l8oecpdg8a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJaM1UADPyljxzsBKRgHLG3SwK3C_nYwM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "39763357993-pc344fsrdulamp6ue1bpn5l8oecpdg8a.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "39763357993-u4hsl769i04jp1ba43gjv8ve2veh7c83.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.gbanga.crashlyticsissuerepro"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
