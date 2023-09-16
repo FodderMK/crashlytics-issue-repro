@@ -2,6 +2,7 @@
 using System.Runtime.CompilerServices;
 using System.Threading;
 using System.Threading.Tasks;
+using UnityEngine;
 
 namespace CrashlyticsIssueRepro
 {
@@ -23,6 +24,15 @@ namespace CrashlyticsIssueRepro
             await EnlargeAsyncStacktraceAndFinallyThrow(50);
         }
 
+        public async Task ThrowAsyncTryCatch()
+        {
+            try {
+                await EnlargeAsyncStacktraceAndFinallyThrow(50);
+            } catch (Exception ex) {
+                Debug.LogException(ex);
+            }
+        }
+
         /// <summary>
         ///     Starts many threads and then throws, to enlarge the footprint of the log data sent to Crashlytics.
         /// </summary>
@@ -30,7 +40,6 @@ namespace CrashlyticsIssueRepro
         {
             StartThreadsAndFinallyThrow(50);
         }
-
 
         [MethodImpl(MethodImplOptions.NoInlining)]
         private static void EnlargeStacktraceAndFinallyThrow(int count)
@@ -59,8 +68,7 @@ namespace CrashlyticsIssueRepro
                 Thread.Sleep(1000);
             }
 
-            for (var i = 0; i < count; i++)
-            {
+            for (var i = 0; i < count; i++) {
                 Thread thread = new(DoWork);
                 thread.Start();
             }

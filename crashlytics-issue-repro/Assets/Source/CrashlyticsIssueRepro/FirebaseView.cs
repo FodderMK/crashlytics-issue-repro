@@ -13,10 +13,11 @@ namespace CrashlyticsIssueRepro
     {
         public TextMeshProUGUI TxtStatus;
         public TextMeshProUGUI TxtLastException;
-    
+
         public Button BtnInitFirebase;
         public Button BtnThrowStack;
         public Button BtnThrowAsync;
+        public Button BtnThrowAsyncTryCatch;
         public Button BtnThrowManyThreads;
         public Button BtnFreezeFor3Seconds;
 
@@ -37,6 +38,7 @@ namespace CrashlyticsIssueRepro
             BtnThrowStack.onClick.AddListener(() => ThrowAndMeasure(thrower.ThrowStack));
             BtnThrowAsync.onClick.AddListener(() => ThrowAndMeasure(thrower.ThrowAsync));
             BtnThrowManyThreads.onClick.AddListener(() => ThrowAndMeasure(thrower.ThrowManyThreads));
+            BtnThrowAsyncTryCatch.onClick.AddListener(() => ThrowAndMeasure(thrower.ThrowAsyncTryCatch));
             BtnFreezeFor3Seconds.onClick.AddListener(() => ThrowAndMeasure(FreezeFor3Seconds));
             Application.logMessageReceivedThreaded += HandleMessageReceived;
 
