@@ -1,8 +1,8 @@
 {
   "dependencies": {
     "com.google.external-dependency-manager": "file:com.google.external-dependency-manager-1.2.186.tgz",
-    "com.google.firebase.app": "file:com.google.firebase.app-12.10.1.tgz",
-    "com.google.firebase.crashlytics": "file:com.google.firebase.crashlytics-12.10.1.tgz",
+    "com.google.firebase.app": "file:com.google.firebase.app-13.0.0.tgz",
+    "com.google.firebase.crashlytics": "file:com.google.firebase.crashlytics-13.0.0.tgz",
     "com.unity.ai.navigation": "1.1.6",
     "com.unity.collab-proxy": "2.7.1",
     "com.unity.feature.2d": "2.0.1",
